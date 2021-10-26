@@ -1,0 +1,181 @@
+{
+    "$schema": "https://aka.ms/terminal-profiles-schema",
+    "keybindings": [
+        {
+          "command": {
+            "action": "splitPane",
+            "split": "auto",
+            "splitMode": "duplicate"
+          },
+          "keys": "alt+d"
+        },
+        {
+          "command": {
+            "action": "splitPane",
+            "split": "horizontal"
+          },
+          "keys": "alt+h"
+        },
+        {
+          "command": {
+            "action": "splitPane",
+            "split": "vertical"
+          },
+          "keys": "alt+v"
+        },
+        {
+          "command": "closePane",
+          "keys": "alt+q"
+        }
+    ],
+    "actions": 
+    [
+        {
+            "command": 
+            {
+                "action": "copy",
+                "singleLine": false
+            },
+            "keys": "ctrl+c"
+        },
+        {
+            "command": "find",
+            "keys": "ctrl+shift+f"
+        },
+        {
+            "command": "paste",
+            "keys": "ctrl+v"
+        },
+        {
+            "command": 
+            {
+                "action": "splitPane",
+                "split": "auto",
+                "splitMode": "duplicate"
+            },
+            "keys": "alt+shift+d"
+        }
+    ],
+    "copyFormatting": "none",
+    "copyOnSelect": false,
+    "defaultProfile": "{07b52e3e-de2c-5db4-bd2d-ba144ed6c273}",
+    "profiles": 
+    {
+        "defaults": {},
+        "list": 
+        [
+            {
+                "commandline": "powershell.exe",
+                "guid": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
+                "hidden": false,
+                "name": "Windows PowerShell"
+            },
+            {
+                "commandline": "cmd.exe",
+                "guid": "{0caa0dad-35be-5f56-a8ff-afceeeaa6101}",
+                "hidden": false,
+                "name": "S\u00edmbolo del sistema"
+            },
+            {
+                "guid": "{b453ae62-4e3d-5e58-b989-0a998ec441b8}",
+                "hidden": false,
+                "name": "Azure Cloud Shell",
+                "source": "Windows.Terminal.Azure"
+            },
+            {
+                "guid": "{07b52e3e-de2c-5db4-bd2d-ba144ed6c273}",
+                "hidden": false,
+                "name": "Ubuntu-20.04",
+                "source": "Windows.Terminal.Wsl",
+                "colorScheme" : "wsl",
+                "fontFace" : "DejaVu Sans Mono for Powerline",
+                "fontSize": 11,
+                "useAcrylic": true,
+                "acrylicOpacity": 0.45,
+                "padding": "1, 1, 1, 1",
+                "experimental.retroTerminalEffect": false,
+                "cursorShape":"doubleUnderscore",
+                "cursorColor": "#37f040",
+                "icon": "C:\\Users\\RAUL\\OneDrive\\Imágenes\\logo_ubuntu.ico"
+            },
+            {
+                "guid": "{58ad8b0c-3ef8-5f4d-bc6f-13e4c00f2530}",
+                "hidden": false,
+                "name": "Debian",
+                "source": "Windows.Terminal.Wsl"
+            }
+        ]
+    },
+    "schemes": 
+    [
+        {
+            "background" : "#002B36",
+            "black" : "#002B36",
+            "blue" : "#268BD2",
+            "brightBlack" : "#657B83",
+            "brightBlue" : "#839496",
+            "brightCyan" : "#D33682",
+            "brightGreen" : "#B58900",
+            "brightPurple" : "#EEE8D5",
+            "brightRed" : "#CB4B16",
+            "brightWhite" : "#FDF6E3",
+            "brightYellow" : "#586E75",
+            "cyan" : "#2AA198",
+            "foreground" : "#93A1A1",
+            "green" : "#859900",
+            "name" : "wsl",
+            "purple" : "#6C71C4",
+            "red" : "#DC322F",
+            "white" : "#93A1A1",
+            "yellow" : "#B58900"
+        },
+        {
+            "name": "Dracula",
+          
+            "foreground": "#F8F8F2",
+            "background": "#282A36",
+          
+            "black": "#21222C",
+            "blue": "#BD93F9",
+            "cyan": "#8BE9FD",
+            "green": "#50FA7B",
+            "purple": "#FF79C6",
+            "red": "#FF5555",
+            "white": "#F8F8F2",
+            "yellow": "#F1FA8C",
+          
+            "brightBlack": "#6272A4",
+            "brightBlue": "#D6ACFF",
+            "brightCyan": "#A4FFFF",
+            "brightGreen": "#69FF94",
+            "brightPurple": "#FF92DF",
+            "brightRed": "#FF6E6E",
+            "brightWhite": "#FFFFFF",
+            "brightYellow": "#FFFFA5"
+          },
+          {
+            "name": "UbuntuLegit",
+          
+            "foreground": "#EEEEEE",
+            "background": "#2C001E",
+          
+            "black": "#4E9A06",
+            "blue": "#3465A4",
+            "cyan": "#06989A",
+            "green": "#300A24",
+            "purple": "#75507B",
+            "red": "#CC0000",
+            "white": "#D3D7CF",
+            "yellow": "#C4A000",
+          
+            "brightBlack": "#555753",
+            "brightBlue": "#729FCF",
+            "brightCyan": "#34E2E2",
+            "brightGreen": "#8AE234",
+            "brightPurple": "#AD7FA8",
+            "brightRed": "#EF2929",
+            "brightWhite": "#EEEEEE",
+            "brightYellow": "#FCE94F"
+          }
+    ]
+}
