@@ -1,1 +1,28 @@
+sudo apt update
+sudo apt install git zsh -y
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+
+
+Cuando nos pregunte si queremos usar zsh como terminal le decimos que sí.
+
+El siguiente paso es configurar el tema, en mi caso me gusta agnoster así que con el comando vi ~/.zshrc editamos el archivo y nos aseguramos de que la línea de configuración del tema este así: ZSH_THEME="agnoster"
+Después hay que agregar nuestro estilo a Windows Terminal, así que abrimos la configuración que es un archivo .json y editamos para que se vea así:
+Ahora nos falta instalar las fuentes para que nuestra terminal sea capaz de mostrar iconos como el de Git. Para esto tenemos que poder ejecutar git clone en PowerShell. Para hacer la instalación nos situamos en una carpeta vacía y ejecutamos lo siguiente:
+
+git clone https://github.com/powerline/fonts.git
+cd fonts
+.\install.ps1
+
+
+
+vi ~/.oh-my-zsh/themes/agnoster.zsh-theme
+Y sustituir la línea 92 por la siguiente:
+prompt_segment green black "%(!.%{%F{yellow}%}.)%n"
+
+Si queremos que la Terminal integrada de Visual Studio Code se vea hermosa como debería verse hay que agregar en la configuración de la instalación de WSL la fuente que permite mostrar en la terminal los iconos:
+{
+    "terminal.integrated.fontFamily": "DejaVu Sans Mono for Powerline"
+}
+
+
 https://platzi.com/tutoriales/1748-terminal/8505-configurando-wsl2-windows-terminal-y-oh-my-zsh/
