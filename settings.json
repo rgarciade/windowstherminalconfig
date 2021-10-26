@@ -94,8 +94,8 @@
                 "acrylicOpacity": 0.45,
                 "padding": "1, 1, 1, 1",
                 "experimental.retroTerminalEffect": false,
-                "cursorShape":"doubleUnderscore",
                 "cursorColor": "#37f040",
+                "cursorShape":"doubleUnderscore",
                 "icon": "C:\\Users\\RAUL\\OneDrive\\Imágenes\\logo_ubuntu.ico"
             },
             {
